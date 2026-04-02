@@ -5,59 +5,199 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — Argumentator</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 700px; margin: 0 auto; padding: 24px; line-height: 1.7; color: #333; }
-  h1 { color: #1a1a2e; border-bottom: 2px solid #6C63FF; padding-bottom: 8px; }
-  h2 { color: #1a1a2e; margin-top: 32px; }
-  a { color: #6C63FF; }
-  .updated { color: #666; font-style: italic; }
+  :root { --primary: #6C63FF; --bg: #fafafa; --card: #ffffff; --text: #2d2d3a; --muted: #6b7280; --border: #e5e7eb; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+  .hero { background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 50%, #1a1a2e 100%); color: white; padding: 48px 24px 36px; text-align: center; }
+  .hero h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.5px; }
+  .hero .updated { color: rgba(255,255,255,0.6); font-size: 14px; }
+  .hero .lang-switch { margin-top: 12px; }
+  .hero .lang-switch a { color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 12px; border-radius: 16px; font-size: 13px; margin: 0 4px; transition: all 0.2s; }
+  .hero .lang-switch a.active { background: rgba(255,255,255,0.15); color: white; }
+  .hero .lang-switch a:hover { color: white; }
+  .container { max-width: 680px; margin: 0 auto; padding: 32px 24px 64px; }
+  .section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+  .section h2 { font-size: 18px; font-weight: 600; color: var(--primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .section h2::before { content: ''; width: 4px; height: 20px; background: var(--primary); border-radius: 2px; }
+  .section p { margin-bottom: 8px; color: var(--text); font-size: 15px; }
+  .section ul { padding-left: 20px; margin-bottom: 8px; }
+  .section li { margin-bottom: 6px; font-size: 15px; color: var(--text); }
+  .section a { color: var(--primary); text-decoration: none; border-bottom: 1px dotted var(--primary); }
+  .section a:hover { border-bottom-style: solid; }
+  .section strong { color: #1a1a2e; }
+  .footer { text-align: center; padding: 24px; color: var(--muted); font-size: 13px; }
+  .footer a { color: var(--primary); text-decoration: none; }
+  [data-lang] { display: none; }
+  [data-lang].active { display: block; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --muted: #94a3b8; --border: #334155; }
+    .section strong { color: #e2e8f0; }
+  }
 </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p class="updated">Last updated: April 1, 2026</p>
 
-<h2>What data we collect</h2>
-<p><strong>Account data:</strong> Email address and display name you provide during registration. If you sign in with Google or Apple, we receive your name and email from those services.</p>
-<p><strong>Usage data:</strong> Number of requests made, argument settings selected (tone, strategy, strength), timestamps.</p>
-<p><strong>History:</strong> Your generated arguments are stored on our servers so you can access them across devices. You can delete individual items or your entire history at any time.</p>
-<p><strong>Device data:</strong> Device type, operating system version, app version — collected automatically for crash reporting and analytics.</p>
+<div class="hero">
+  <h1 data-lang="en" class="active">Privacy Policy</h1>
+  <h1 data-lang="ru">Политика конфиденциальности</h1>
+  <div class="updated" data-lang="en" class="active">Last updated: April 2, 2026</div>
+  <div class="updated" data-lang="ru">Обновлено: 2 апреля 2026</div>
+  <div class="lang-switch">
+    <a href="?lang=en" id="btn-en" class="active">EN</a>
+    <a href="?lang=ru" id="btn-ru">RU</a>
+  </div>
+</div>
 
-<h2>What we do NOT collect</h2>
-<p>We do not collect your location, contacts, photos, or any data unrelated to the app's functionality.</p>
+<div class="container">
 
-<h2>How we use your data</h2>
-<ul>
-<li>To provide the service (generate arguments based on your requests)</li>
-<li>To enforce usage limits per subscription tier</li>
-<li>To save your argument history and preferences</li>
-<li>To improve the service (aggregate, anonymized usage statistics)</li>
-<li>To send push notifications (daily challenges) if you opt in</li>
-</ul>
+<!-- ENGLISH -->
+<div data-lang="en" class="active">
+  <div class="section">
+    <h2>What data we collect</h2>
+    <p><strong>Account data:</strong> Email address and display name you provide during registration. If you sign in with Google or Apple, we receive your name and email from those services.</p>
+    <p><strong>Usage data:</strong> Number of requests made, argument settings selected (tone, strategy, strength), timestamps.</p>
+    <p><strong>History:</strong> Your generated arguments are stored on our servers so you can access them across devices. You can delete individual items or your entire history at any time.</p>
+    <p><strong>Device data:</strong> Device type, operating system version, app version — collected automatically for crash reporting and analytics.</p>
+  </div>
 
-<h2>Third-party services</h2>
-<ul>
-<li><strong>Firebase</strong> (Google): Authentication, crash reporting, analytics. <a href="https://firebase.google.com/support/privacy">Privacy Policy</a></li>
-<li><strong>MongoDB Atlas</strong>: Database hosting. <a href="https://www.mongodb.com/legal/privacy-policy">Privacy Policy</a></li>
-<li><strong>RevenueCat</strong>: Subscription management. <a href="https://www.revenuecat.com/privacy">Privacy Policy</a></li>
-<li><strong>Tavily</strong>: Web search for source-backed arguments. <a href="https://tavily.com/privacy">Privacy Policy</a></li>
-</ul>
+  <div class="section">
+    <h2>What we do NOT collect</h2>
+    <p>We do not collect your location, contacts, photos, or any data unrelated to the app's functionality.</p>
+  </div>
 
-<h2>Data retention</h2>
-<p>Account data is retained until you delete your account. Argument history is retained for 5 years, or until you manually delete it. Usage counters reset daily. Server logs are retained for 30 days.</p>
+  <div class="section">
+    <h2>How we use your data</h2>
+    <ul>
+      <li>To provide the service (generate arguments based on your requests)</li>
+      <li>To enforce usage limits per subscription tier</li>
+      <li>To save your argument history and preferences</li>
+      <li>To improve the service (aggregate, anonymized usage statistics)</li>
+      <li>To send push notifications (daily challenges) if you opt in</li>
+    </ul>
+  </div>
 
-<h2>Data security</h2>
-<p>All data is transmitted over HTTPS. Passwords are hashed using bcrypt. Database access is restricted to authorized services only.</p>
+  <div class="section">
+    <h2>Third-party services</h2>
+    <ul>
+      <li><strong>Firebase</strong> (Google): Authentication, crash reporting, analytics. <a href="https://firebase.google.com/support/privacy">Privacy Policy</a></li>
+      <li><strong>MongoDB Atlas</strong>: Database hosting. <a href="https://www.mongodb.com/legal/privacy-policy">Privacy Policy</a></li>
+      <li><strong>RevenueCat</strong>: Subscription management. <a href="https://www.revenuecat.com/privacy">Privacy Policy</a></li>
+      <li><strong>Tavily</strong>: Web search for source-backed arguments. <a href="https://tavily.com/privacy">Privacy Policy</a></li>
+      <li><strong>AdMob</strong> (Google): Advertising for free tier users. <a href="https://policies.google.com/privacy">Privacy Policy</a></li>
+    </ul>
+  </div>
 
-<h2>Your rights</h2>
-<p>You may request deletion of your account and all associated data by contacting us. You can delete your argument history directly within the app.</p>
+  <div class="section">
+    <h2>Data retention</h2>
+    <p>Account data is retained until you delete your account. Argument history is retained for 5 years, or until you manually delete it. Usage counters reset daily. Server logs are retained for 30 days.</p>
+  </div>
 
-<h2>Children</h2>
-<p>This app is not intended for children under 13. We do not knowingly collect data from children under 13.</p>
+  <div class="section">
+    <h2>Data security</h2>
+    <p>All data is transmitted over HTTPS. Passwords are hashed using bcrypt. Database access is restricted to authorized services only.</p>
+  </div>
 
-<h2>Changes to this policy</h2>
-<p>We may update this policy from time to time. We will notify you of significant changes through the app.</p>
+  <div class="section">
+    <h2>Your rights</h2>
+    <p>You may request deletion of your account and all associated data by contacting us. You can delete your argument history directly within the app.</p>
+  </div>
 
-<h2>Contact</h2>
-<p>privacy@argumentator.app</p>
+  <div class="section">
+    <h2>Children</h2>
+    <p>This app is not intended for children under 13. We do not knowingly collect data from children under 13.</p>
+  </div>
+
+  <div class="section">
+    <h2>Changes to this policy</h2>
+    <p>We may update this policy from time to time. We will notify you of significant changes through the app.</p>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <p><a href="mailto:privacy@argumentator.app">privacy@argumentator.app</a></p>
+  </div>
+</div>
+
+<!-- RUSSIAN -->
+<div data-lang="ru">
+  <div class="section">
+    <h2>Какие данные мы собираем</h2>
+    <p><strong>Данные аккаунта:</strong> Адрес электронной почты и имя, которые вы указываете при регистрации. При входе через Google или Apple мы получаем ваше имя и email от этих сервисов.</p>
+    <p><strong>Данные использования:</strong> Количество запросов, выбранные настройки (тон, стратегия, убедительность), временные метки.</p>
+    <p><strong>История:</strong> Ваши сгенерированные аргументы хранятся на наших серверах для доступа с разных устройств. Вы можете удалить отдельные записи или всю историю в любой момент.</p>
+    <p><strong>Данные устройства:</strong> Тип устройства, версия ОС, версия приложения — собираются автоматически для отчётов об ошибках и аналитики.</p>
+  </div>
+
+  <div class="section">
+    <h2>Что мы НЕ собираем</h2>
+    <p>Мы не собираем данные о вашем местоположении, контактах, фотографиях или любые данные, не связанные с функциональностью приложения.</p>
+  </div>
+
+  <div class="section">
+    <h2>Как мы используем ваши данные</h2>
+    <ul>
+      <li>Для предоставления сервиса (генерация аргументов по вашим запросам)</li>
+      <li>Для контроля лимитов использования по тарифному плану</li>
+      <li>Для сохранения истории аргументов и настроек</li>
+      <li>Для улучшения сервиса (агрегированная, обезличенная статистика)</li>
+      <li>Для отправки push-уведомлений (ежедневные вызовы) при вашем согласии</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Сторонние сервисы</h2>
+    <ul>
+      <li><strong>Firebase</strong> (Google): Аутентификация, отчёты об ошибках, аналитика. <a href="https://firebase.google.com/support/privacy">Политика конфиденциальности</a></li>
+      <li><strong>MongoDB Atlas</strong>: Хостинг базы данных. <a href="https://www.mongodb.com/legal/privacy-policy">Политика конфиденциальности</a></li>
+      <li><strong>RevenueCat</strong>: Управление подписками. <a href="https://www.revenuecat.com/privacy">Политика конфиденциальности</a></li>
+      <li><strong>Tavily</strong>: Веб-поиск для аргументов с источниками. <a href="https://tavily.com/privacy">Политика конфиденциальности</a></li>
+      <li><strong>AdMob</strong> (Google): Реклама для бесплатных пользователей. <a href="https://policies.google.com/privacy">Политика конфиденциальности</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Хранение данных</h2>
+    <p>Данные аккаунта хранятся до удаления аккаунта. История аргументов хранится 5 лет или до ручного удаления. Счётчики использования сбрасываются ежедневно. Серверные логи хранятся 30 дней.</p>
+  </div>
+
+  <div class="section">
+    <h2>Безопасность данных</h2>
+    <p>Все данные передаются по HTTPS. Пароли хешируются с помощью bcrypt. Доступ к базе данных ограничен авторизованными сервисами.</p>
+  </div>
+
+  <div class="section">
+    <h2>Ваши права</h2>
+    <p>Вы можете запросить удаление аккаунта и всех связанных данных, связавшись с нами. Вы можете удалить историю аргументов прямо в приложении.</p>
+  </div>
+
+  <div class="section">
+    <h2>Дети</h2>
+    <p>Приложение не предназначено для детей младше 13 лет. Мы не собираем данные детей младше 13 лет намеренно.</p>
+  </div>
+
+  <div class="section">
+    <h2>Изменения в политике</h2>
+    <p>Мы можем обновлять эту политику время от времени. О значительных изменениях мы уведомим вас через приложение.</p>
+  </div>
+
+  <div class="section">
+    <h2>Контакты</h2>
+    <p><a href="mailto:privacy@argumentator.app">privacy@argumentator.app</a></p>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  © 2026 Argumentator · <a href="terms.html">Terms of Service</a>
+</div>
+
+<script>
+  const lang = new URLSearchParams(location.search).get('lang') || (navigator.language.startsWith('ru') ? 'ru' : 'en');
+  document.querySelectorAll('[data-lang]').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+  document.documentElement.lang = lang;
+</script>
 </body>
 </html>
