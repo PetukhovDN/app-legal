@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de Confidentialité — Argumentator</title>
+<style>
+  :root { --primary: #6C63FF; --bg: #fafafa; --card: #ffffff; --text: #2d2d3a; --muted: #6b7280; --border: #e5e7eb; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+  .hero { background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 50%, #1a1a2e 100%); color: white; padding: 48px 24px 36px; text-align: center; }
+  .hero h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.5px; }
+  .hero .updated { color: rgba(255,255,255,0.6); font-size: 14px; }
+  .hero .lang-switch { margin-top: 12px; }
+  .hero .lang-switch a { color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 12px; border-radius: 16px; font-size: 13px; margin: 0 4px; transition: all 0.2s; }
+  .hero .lang-switch a.active { background: rgba(255,255,255,0.15); color: white; }
+  .hero .lang-switch a:hover { color: white; }
+  .container { max-width: 680px; margin: 0 auto; padding: 32px 24px 64px; }
+  .section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+  .section h2 { font-size: 18px; font-weight: 600; color: var(--primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .section h2::before { content: ''; width: 4px; height: 20px; background: var(--primary); border-radius: 2px; }
+  .section p { margin-bottom: 8px; color: var(--text); font-size: 15px; }
+  .section ul { padding-left: 20px; margin-bottom: 8px; }
+  .section li { margin-bottom: 6px; font-size: 15px; color: var(--text); }
+  .section a { color: var(--primary); text-decoration: none; border-bottom: 1px dotted var(--primary); }
+  .section a:hover { border-bottom-style: solid; }
+  .section strong { color: #1a1a2e; }
+  .footer { text-align: center; padding: 24px; color: var(--muted); font-size: 13px; }
+  .footer a { color: var(--primary); text-decoration: none; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --muted: #94a3b8; --border: #334155; }
+    .section strong { color: #e2e8f0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Politique de Confidentialité</h1>
+  <div class="updated">Dernière mise à jour : 2 avril 2026</div>
+  <div class="lang-switch">
+    <a href="../en/privacy.html">EN</a>
+    <a href="../ru/privacy.html">RU</a>
+    <a href="../de/privacy.html">DE</a>
+    <a href="../es/privacy.html">ES</a>
+    <a href="../fr/privacy.html" class="active">FR</a>
+    <a href="../pt/privacy.html">PT</a>
+    <a href="../zh/privacy.html">ZH</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <h2>Quelles données nous collectons</h2>
+    <p><strong>Données du compte :</strong> Adresse e-mail et nom d'affichage que vous fournissez lors de l'inscription. Si vous vous connectez avec Google ou Apple, nous recevons votre nom et votre adresse e-mail de ces services.</p>
+    <p><strong>Données d'utilisation :</strong> Nombre de requêtes effectuées, paramètres d'arguments sélectionnés (ton, stratégie, force), horodatages.</p>
+    <p><strong>Historique :</strong> Vos arguments générés sont stockés sur nos serveurs afin que vous puissiez y accéder depuis n'importe quel appareil. Vous pouvez supprimer des éléments individuels ou l'intégralité de votre historique à tout moment.</p>
+    <p><strong>Données de l'appareil :</strong> Type d'appareil, version du système d'exploitation, version de l'application — collectées automatiquement pour les rapports de plantage et les analyses.</p>
+  </div>
+
+  <div class="section">
+    <h2>Ce que nous ne collectons PAS</h2>
+    <p>Nous ne collectons pas votre localisation, vos contacts, vos photos ni aucune donnée sans rapport avec les fonctionnalités de l'application.</p>
+  </div>
+
+  <div class="section">
+    <h2>Comment nous utilisons vos données</h2>
+    <ul>
+      <li>Pour fournir le service (générer des arguments en fonction de vos requêtes)</li>
+      <li>Pour appliquer les limites d'utilisation selon le niveau d'abonnement</li>
+      <li>Pour sauvegarder votre historique d'arguments et vos préférences</li>
+      <li>Pour améliorer le service (statistiques d'utilisation agrégées et anonymisées)</li>
+      <li>Pour envoyer des notifications push (défis quotidiens) si vous y consentez</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Services tiers</h2>
+    <ul>
+      <li><strong>Firebase</strong> (Google) : Authentification, rapports de plantage, analyses. <a href="https://firebase.google.com/support/privacy">Politique de Confidentialité</a></li>
+      <li><strong>MongoDB Atlas</strong> : Hébergement de base de données. <a href="https://www.mongodb.com/legal/privacy-policy">Politique de Confidentialité</a></li>
+      <li><strong>RevenueCat</strong> : Gestion des abonnements. <a href="https://www.revenuecat.com/privacy">Politique de Confidentialité</a></li>
+      <li><strong>Tavily</strong> : Recherche web pour les arguments sourcés. <a href="https://tavily.com/privacy">Politique de Confidentialité</a></li>
+      <li><strong>AdMob</strong> (Google) : Publicité pour les utilisateurs du forfait gratuit. <a href="https://policies.google.com/privacy">Politique de Confidentialité</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Conservation des données</h2>
+    <p>Les données du compte sont conservées jusqu'à la suppression de votre compte. L'historique des arguments est conservé pendant 5 ans ou jusqu'à ce que vous le supprimiez manuellement. Les compteurs d'utilisation sont réinitialisés quotidiennement. Les journaux serveur sont conservés pendant 30 jours.</p>
+  </div>
+
+  <div class="section">
+    <h2>Sécurité des données</h2>
+    <p>Toutes les données sont transmises via HTTPS. Les mots de passe sont hachés à l'aide de bcrypt. L'accès à la base de données est limité aux seuls services autorisés.</p>
+  </div>
+
+  <div class="section">
+    <h2>Vos droits</h2>
+    <p>Vous pouvez demander la suppression de votre compte et de toutes les données associées en nous contactant. Vous pouvez supprimer votre historique d'arguments directement dans l'application.</p>
+  </div>
+
+  <div class="section">
+    <h2>Enfants</h2>
+    <p>Cette application n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données concernant les enfants de moins de 13 ans.</p>
+  </div>
+
+  <div class="section">
+    <h2>Modifications de cette politique</h2>
+    <p>Nous pouvons mettre à jour cette politique de temps à autre. Nous vous informerons des modifications importantes via l'application.</p>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <p><a href="mailto:privacy@argumentator.app">privacy@argumentator.app</a></p>
+  </div>
+
+</div>
+
+<div class="footer">
+  © 2026 Argumentator · <a href="terms.html">Conditions d'Utilisation</a>
+</div>
+
+</body>
+</html>

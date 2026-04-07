@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 — Argumentator</title>
+<style>
+  :root { --primary: #6C63FF; --bg: #fafafa; --card: #ffffff; --text: #2d2d3a; --muted: #6b7280; --border: #e5e7eb; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+  .hero { background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 50%, #1a1a2e 100%); color: white; padding: 48px 24px 36px; text-align: center; }
+  .hero h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.5px; }
+  .hero .updated { color: rgba(255,255,255,0.6); font-size: 14px; }
+  .hero .lang-switch { margin-top: 12px; }
+  .hero .lang-switch a { color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 12px; border-radius: 16px; font-size: 13px; margin: 0 4px; transition: all 0.2s; }
+  .hero .lang-switch a.active { background: rgba(255,255,255,0.15); color: white; }
+  .hero .lang-switch a:hover { color: white; }
+  .container { max-width: 680px; margin: 0 auto; padding: 32px 24px 64px; }
+  .section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+  .section h2 { font-size: 18px; font-weight: 600; color: var(--primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .section h2::before { content: ''; width: 4px; height: 20px; background: var(--primary); border-radius: 2px; }
+  .section p { margin-bottom: 8px; color: var(--text); font-size: 15px; }
+  .section ul { padding-left: 20px; margin-bottom: 8px; }
+  .section li { margin-bottom: 6px; font-size: 15px; color: var(--text); }
+  .section a { color: var(--primary); text-decoration: none; border-bottom: 1px dotted var(--primary); }
+  .section a:hover { border-bottom-style: solid; }
+  .section strong { color: #1a1a2e; }
+  .footer { text-align: center; padding: 24px; color: var(--muted); font-size: 13px; }
+  .footer a { color: var(--primary); text-decoration: none; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --muted: #94a3b8; --border: #334155; }
+    .section strong { color: #e2e8f0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>隐私政策</h1>
+  <div class="updated">最后更新：2026年4月2日</div>
+  <div class="lang-switch">
+    <a href="../en/privacy.html">EN</a>
+    <a href="../ru/privacy.html">RU</a>
+    <a href="../de/privacy.html">DE</a>
+    <a href="../es/privacy.html">ES</a>
+    <a href="../fr/privacy.html">FR</a>
+    <a href="../pt/privacy.html">PT</a>
+    <a href="../zh/privacy.html" class="active">ZH</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <h2>我们收集哪些数据</h2>
+    <p><strong>账户数据：</strong>您在注册时提供的电子邮件地址和显示名称。如果您通过 Google 或 Apple 登录，我们会从这些服务获取您的姓名和电子邮件地址。</p>
+    <p><strong>使用数据：</strong>请求次数、选择的论点设置（语气、策略、强度）、时间戳。</p>
+    <p><strong>历史记录：</strong>您生成的论点存储在我们的服务器上，以便您可以跨设备访问。您可以随时删除单个条目或全部历史记录。</p>
+    <p><strong>设备数据：</strong>设备类型、操作系统版本、应用版本——自动收集，用于崩溃报告和数据分析。</p>
+  </div>
+
+  <div class="section">
+    <h2>我们不收集哪些数据</h2>
+    <p>我们不收集您的位置信息、通讯录、照片或任何与应用功能无关的数据。</p>
+  </div>
+
+  <div class="section">
+    <h2>我们如何使用您的数据</h2>
+    <ul>
+      <li>提供服务（根据您的请求生成论点）</li>
+      <li>按订阅级别执行使用限制</li>
+      <li>保存您的论点历史记录和偏好设置</li>
+      <li>改进服务（汇总的匿名使用统计数据）</li>
+      <li>在您同意的情况下发送推送通知（每日挑战）</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>第三方服务</h2>
+    <ul>
+      <li><strong>Firebase</strong>（Google）：身份验证、崩溃报告、数据分析。<a href="https://firebase.google.com/support/privacy">隐私政策</a></li>
+      <li><strong>MongoDB Atlas</strong>：数据库托管。<a href="https://www.mongodb.com/legal/privacy-policy">隐私政策</a></li>
+      <li><strong>RevenueCat</strong>：订阅管理。<a href="https://www.revenuecat.com/privacy">隐私政策</a></li>
+      <li><strong>Tavily</strong>：为引用来源的论点提供网络搜索。<a href="https://tavily.com/privacy">隐私政策</a></li>
+      <li><strong>AdMob</strong>（Google）：面向免费用户的广告。<a href="https://policies.google.com/privacy">隐私政策</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>数据保留</h2>
+    <p>账户数据保留至您删除账户为止。论点历史记录保留5年，或直到您手动删除为止。使用计数器每日重置。服务器日志保留30天。</p>
+  </div>
+
+  <div class="section">
+    <h2>数据安全</h2>
+    <p>所有数据通过 HTTPS 传输。密码使用 bcrypt 进行哈希处理。数据库访问仅限于授权服务。</p>
+  </div>
+
+  <div class="section">
+    <h2>您的权利</h2>
+    <p>您可以通过联系我们申请删除您的账户及所有相关数据。您可以直接在应用内删除您的论点历史记录。</p>
+  </div>
+
+  <div class="section">
+    <h2>儿童</h2>
+    <p>本应用不面向13岁以下的儿童。我们不会故意收集13岁以下儿童的数据。</p>
+  </div>
+
+  <div class="section">
+    <h2>本政策的变更</h2>
+    <p>我们可能会不时更新本政策。如有重大变更，我们将通过应用通知您。</p>
+  </div>
+
+  <div class="section">
+    <h2>联系方式</h2>
+    <p><a href="mailto:privacy@argumentator.app">privacy@argumentator.app</a></p>
+  </div>
+
+</div>
+
+<div class="footer">
+  © 2026 Argumentator · <a href="terms.html">服务条款</a>
+</div>
+
+</body>
+</html>

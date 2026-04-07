@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — Argumentator</title>
+<style>
+  :root { --primary: #6C63FF; --bg: #fafafa; --card: #ffffff; --text: #2d2d3a; --muted: #6b7280; --border: #e5e7eb; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+  .hero { background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 50%, #1a1a2e 100%); color: white; padding: 48px 24px 36px; text-align: center; }
+  .hero h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.5px; }
+  .hero .updated { color: rgba(255,255,255,0.6); font-size: 14px; }
+  .hero .lang-switch { margin-top: 12px; }
+  .hero .lang-switch a { color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 12px; border-radius: 16px; font-size: 13px; margin: 0 4px; transition: all 0.2s; }
+  .hero .lang-switch a.active { background: rgba(255,255,255,0.15); color: white; }
+  .hero .lang-switch a:hover { color: white; }
+  .container { max-width: 680px; margin: 0 auto; padding: 32px 24px 64px; }
+  .section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+  .section h2 { font-size: 18px; font-weight: 600; color: var(--primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .section h2::before { content: ''; width: 4px; height: 20px; background: var(--primary); border-radius: 2px; }
+  .section p { margin-bottom: 8px; color: var(--text); font-size: 15px; }
+  .section ul { padding-left: 20px; margin-bottom: 8px; }
+  .section li { margin-bottom: 6px; font-size: 15px; color: var(--text); }
+  .section a { color: var(--primary); text-decoration: none; border-bottom: 1px dotted var(--primary); }
+  .section a:hover { border-bottom-style: solid; }
+  .section strong { color: #1a1a2e; }
+  .footer { text-align: center; padding: 24px; color: var(--muted); font-size: 13px; }
+  .footer a { color: var(--primary); text-decoration: none; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --muted: #94a3b8; --border: #334155; }
+    .section strong { color: #e2e8f0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Política de Privacidade</h1>
+  <div class="updated">Última atualização: 2 de abril de 2026</div>
+  <div class="lang-switch">
+    <a href="../en/privacy.html">EN</a>
+    <a href="../ru/privacy.html">RU</a>
+    <a href="../de/privacy.html">DE</a>
+    <a href="../es/privacy.html">ES</a>
+    <a href="../fr/privacy.html">FR</a>
+    <a href="../pt/privacy.html" class="active">PT</a>
+    <a href="../zh/privacy.html">ZH</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <h2>Quais dados coletamos</h2>
+    <p><strong>Dados da conta:</strong> Endereço de e-mail e nome de exibição que você fornece durante o registro. Se você fizer login com Google ou Apple, recebemos seu nome e e-mail desses serviços.</p>
+    <p><strong>Dados de uso:</strong> Número de solicitações realizadas, configurações de argumentos selecionadas (tom, estratégia, intensidade), registros de data e hora.</p>
+    <p><strong>Histórico:</strong> Seus argumentos gerados são armazenados em nossos servidores para que você possa acessá-los em diferentes dispositivos. Você pode excluir itens individuais ou todo o seu histórico a qualquer momento.</p>
+    <p><strong>Dados do dispositivo:</strong> Tipo de dispositivo, versão do sistema operacional, versão do aplicativo — coletados automaticamente para relatórios de falhas e análises.</p>
+  </div>
+
+  <div class="section">
+    <h2>O que NÃO coletamos</h2>
+    <p>Não coletamos sua localização, contatos, fotos ou quaisquer dados não relacionados à funcionalidade do aplicativo.</p>
+  </div>
+
+  <div class="section">
+    <h2>Como utilizamos seus dados</h2>
+    <ul>
+      <li>Para fornecer o serviço (gerar argumentos com base em suas solicitações)</li>
+      <li>Para aplicar os limites de uso de acordo com o nível de assinatura</li>
+      <li>Para salvar seu histórico de argumentos e preferências</li>
+      <li>Para melhorar o serviço (estatísticas de uso agregadas e anonimizadas)</li>
+      <li>Para enviar notificações push (desafios diários) caso você opte por recebê-las</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Serviços de terceiros</h2>
+    <ul>
+      <li><strong>Firebase</strong> (Google): Autenticação, relatórios de falhas, análises. <a href="https://firebase.google.com/support/privacy">Política de Privacidade</a></li>
+      <li><strong>MongoDB Atlas</strong>: Hospedagem de banco de dados. <a href="https://www.mongodb.com/legal/privacy-policy">Política de Privacidade</a></li>
+      <li><strong>RevenueCat</strong>: Gerenciamento de assinaturas. <a href="https://www.revenuecat.com/privacy">Política de Privacidade</a></li>
+      <li><strong>Tavily</strong>: Pesquisa na web para argumentos com fontes. <a href="https://tavily.com/privacy">Política de Privacidade</a></li>
+      <li><strong>AdMob</strong> (Google): Publicidade para usuários do plano gratuito. <a href="https://policies.google.com/privacy">Política de Privacidade</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Retenção de dados</h2>
+    <p>Os dados da conta são mantidos até que você exclua sua conta. O histórico de argumentos é mantido por 5 anos ou até que você o exclua manualmente. Os contadores de uso são redefinidos diariamente. Os logs do servidor são mantidos por 30 dias.</p>
+  </div>
+
+  <div class="section">
+    <h2>Segurança dos dados</h2>
+    <p>Todos os dados são transmitidos via HTTPS. As senhas são criptografadas usando bcrypt. O acesso ao banco de dados é restrito apenas a serviços autorizados.</p>
+  </div>
+
+  <div class="section">
+    <h2>Seus direitos</h2>
+    <p>Você pode solicitar a exclusão de sua conta e de todos os dados associados entrando em contato conosco. Você pode excluir seu histórico de argumentos diretamente no aplicativo.</p>
+  </div>
+
+  <div class="section">
+    <h2>Crianças</h2>
+    <p>Este aplicativo não é destinado a crianças menores de 13 anos. Não coletamos intencionalmente dados de crianças menores de 13 anos.</p>
+  </div>
+
+  <div class="section">
+    <h2>Alterações nesta política</h2>
+    <p>Podemos atualizar esta política periodicamente. Notificaremos você sobre alterações significativas por meio do aplicativo.</p>
+  </div>
+
+  <div class="section">
+    <h2>Contato</h2>
+    <p><a href="mailto:privacy@argumentator.app">privacy@argumentator.app</a></p>
+  </div>
+
+</div>
+
+<div class="footer">
+  © 2026 Argumentator · <a href="terms.html">Termos de Serviço</a>
+</div>
+
+</body>
+</html>
